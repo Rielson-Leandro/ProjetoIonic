@@ -1,0 +1,93 @@
+<ion-content padding>
+<ion-list>
+  <ion-item *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+    <h3>
+      {{d.title}}
+      <ion-icon color="success" item-right [name]="isGroupShown(i) ? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+    </h3>
+    <div *ngIf="isGroupShown(i)">{{d.description}}</div>
+
+    
+
+  </ion-item>
+
+  <ion-item *ngFor="let t of tabela; let j=index1" text-wrap (click)="toggleGroup(j)" [ngClass]="{active: isGroupShown(j)}">
+    <h3>
+      {{t.title}}
+      
+      <ion-icon color="success" item-right [name]="isGroupShown(j) ? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+    </h3>
+    <div *ngIf="isGroupShown(j)">{{t.description}}
+
+    <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div><strong>{{t.tabela}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTabela}}</div>
+        
+      </ion-col>
+      <ion-col>
+        <div><strong>{{t.tratamento}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTrat}}</div>
+      </ion-col>
+
+      <ion-col>
+        <div><strong>{{t.tabela1}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTabela1}}</div>
+        </ion-col>
+      <ion-col>
+        <div><strong>{{t.tabela2}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTabela2}}</div>
+        </ion-col>
+        <ion-col>
+        <div><strong>{{t.tabela3}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTabela3}}</div>
+        </ion-col>
+        <ion-col>
+        <div><strong>{{t.tabela4}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTabela4}}</div>
+      </ion-col>
+
+      <ion-col>
+        <div><strong>{{t.tabela5}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTabela5}}</div>
+      </ion-col>
+      <ion-col>
+        <div><strong>{{t.tratamento1}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTrat1}}</div>
+      </ion-col>
+
+      <ion-col>
+        <div><strong>{{t.tabela6}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTabela6}}</div>
+      </ion-col>
+      <ion-col>
+        <div><strong>{{t.tratamento2}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTrat2}}</div>
+      </ion-col>
+
+      <ion-col>
+        <div><strong>{{t.tabela7}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTabela7}}</div>
+      </ion-col>
+      <ion-col>
+        <div><strong>{{t.tratamento3}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTrat3}}</div>
+      </ion-col>
+
+      <ion-col>
+        <div><strong>{{t.tabela8}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTabela8}}</div>
+      </ion-col>
+      <ion-col>
+        <div><strong>{{t.tratamento4}}</strong></div>
+        <div *ngIf="isGroupShown(j)">{{t.descricaoTrat4}}</div>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+    </div>
+  </ion-item>
+</ion-list>
+
+
+</ion-content>

@@ -1,0 +1,54 @@
+<ion-header class="background">
+      <img  class="logo" src="assets/img/logo_verde3.png"/>
+</ion-header>
+
+<ion-content padding>
+ <ion-list>
+
+  <ion-item>
+    <ion-label floating>Diagnóstico Clínico</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+  <ion-item>
+  <ion-label>Aguda</ion-label>
+  <ion-checkbox color="cabecalho" checked="false" name="inlineRadioOptions" id="inlineRadio1" value="option1"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Subaguda</ion-label>
+  <ion-checkbox color="cabecalho" checked="false" name="inlineRadioOptions" id="inlineRadio2" value="option2"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Crônica</ion-label>
+  <ion-checkbox color="cabecalho" checked="false" name="inlineRadioOptions" id="inlineRadio3" value="option3"></ion-checkbox>
+</ion-item>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>Procedimento Cirúrgico</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>Queixa Principal</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button class="tratamento" ion-button color="cabecalho" (click)="resultado()">Buscar Tratamento</button>
+
+
+
+
+</ion-content>
+
